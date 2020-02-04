@@ -1,10 +1,40 @@
-/* I should probably have a class for green /bits
-*/
+a {color: inherit;}
 h3 {color: green
 
 }
-h4 {color: green}
+h4 {color: green;
+font-family: sans-serif;}
+
+h2 {font-family:serif;
+  font-size: 22px;
+}
+
+
 
 .evensies {
 column-count: 4;
+}
+.logoia {
+
+}
+
+.liminaldiv {
+  font-family: sans-serif;
+}
+
+.homeywomey{
+  color: white;
+  background-color: green;
+}
+
+.linkytop {
+  color: white;
+  background-color: black;
+  font-size: 15px
+  font-family: sans-serif;
+
+}
+.lilpix {
+  font-family: serif;
+
 }
