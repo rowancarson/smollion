@@ -47,5 +47,9 @@ column-count: 4;
 }
 .lilpix {
   font-family: serif;
+  float: left;
 
+}
+.lilpix p {
+  float:right;
 }
