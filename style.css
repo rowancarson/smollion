@@ -9,6 +9,17 @@ h2 {font-family:serif;
   font-size: 22px;
 }
 
+.segment{
+  /*probably should refactor such that one can  */
+
+}
+
+.bigstory{
+  float:left;
+}
+.lilright{
+  float:right;
+}
 
 
 .evensies {
