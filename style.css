@@ -1,5 +1,4 @@
-/* global below */
-
+/* Global styles */
 a {color: inherit;}
 /* I made a inherit because I didn't want links to be a different color from nonlinks */
 h3 {color: green
@@ -11,33 +10,50 @@ font-family: sans-serif;}
 h2 {font-family:serif;
   font-size: 22px;
 }
+p {font-size: 16px;
+  word-wrap: break-word;
+
+}
 
 
 /* big chunks below */
+.toplilpixcontainer{
+border-bottom: 1px solid;
+}
+
 .segment{
   /*bigstory and lilright are both subclasses of segment
   you should probably be able to inherit from segment by default? */
-
+  display: block;
+  position: absolute;
 }
 /* bigstory is the part where the big stories go */
 .bigstory{
-  float:left;
+  position: relative;
+  display:block;
 }
-/* lirights are the sections of segment where smaller stories go; they're to the right of bigstories thus the name */
-.lilright{
-  float:right;
+/* lilstorys are the smaller stories*/
+.lilstory{
+  position: relative;
+  display: block;
 }
-
-
+.lilstory h2{float:right;j  }
+.imagecontainer{
+  /* because I don't want to use jquery rn to do mason layout */
+}
 
 .evensies {
+
 column-count: 4;
 }
+
+
 /* logoia is the section that has the logo*/
 .logoia {
-
+box-sizing: border-box;
+margin: 10px
 }
-/* liminaldiv is between */
+/* liminaldiv is between logoia and lilpix */
 .liminaldiv {
   font-family: sans-serif;
 }
@@ -45,8 +61,8 @@ column-count: 4;
 
 .linkytop {
   color: white;
-  background-color: black;
-  font-size: 15px
+  background: #000000;
+  font-size: 15px;
   font-family: sans-serif;
 
 }
@@ -55,18 +71,25 @@ column-count: 4;
   float:right;
 }
 /* homey womey is class for the word HOME in linkytop */
-.homeywomey{
+.linkytop > p :first-child element {
   color: white;
-  background-color: green;
+  background: green;
 }
 
 
 .lilpix {
   font-family: serif;
   float: left;
+  box-sizing: border-box;
+  margin-bottom: 1em;
+  border: 1em;
+  padding: 1em;
 
 }
+.lilpix img {
+  float:left;
+}
 .lilpix p {
-  float:right;
+  float: right;
   display: block;
 /* need to set a size for this element} */
